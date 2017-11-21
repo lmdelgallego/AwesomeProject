@@ -79,21 +79,23 @@ export class listViewMovie extends Component {
   renderRow(dataRow){
     
     // Buttons
-    let swipeoutBtns = [
+    let swBtnRight = [
       {
         component: (<Icon name="md-create" size={30} color="white" style={styles.btnIcons}/>),
         backgroundColor: 'orange',
         onPress: () => { this.pressCell(dataRow) }
-      },
+      }
+    ]
+
+    let swBtnLeft = [
       {
         component: (<Icon name="ios-trash-outline" size={30} color="white" style={styles.btnIcons} />),
         backgroundColor: "red",
         onPress: () => { this.pressCell(dataRow) }
       }
-
     ]
     return (
-      <Swipeout right={swipeoutBtns} autoClose={true} backgroundColor="white"> 
+      <Swipeout right={swBtnRight} left={swBtnLeft} autoClose={true} backgroundColor="white" buttonWidth={54}> 
         <TouchableHighlight onPress={ ()=> this.pressCell(dataRow)}>
             <View style={styles.cell}>
               <Text>{dataRow}</Text>
@@ -140,11 +142,6 @@ const styles = StyleSheet.create({
   containerDetails:{
     flex: 1
   },
-  actionButtonIcon: {
-    fontSize: 20,
-    height: 22,
-    color: 'white',
-  },
   cell:{
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
@@ -171,7 +168,7 @@ const styles = StyleSheet.create({
   },
   btnIcons:{
     textAlign: 'center',
-    paddingTop: 10
+    paddingTop: 15
   }
 });
 
