@@ -1,0 +1,4 @@
+#Wed Nov 22 14:40:59 COT 2017
+base.0=/Users/lmdelgallego/Documents/PROJECTS/LUISMIGUEL/AwesomeProject/android/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex

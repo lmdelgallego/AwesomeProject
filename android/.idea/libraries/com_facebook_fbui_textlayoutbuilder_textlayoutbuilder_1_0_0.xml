@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.facebook.fbui.textlayoutbuilder:textlayoutbuilder-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/e8055ef1c73809678cd8f46a977332e0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/e8055ef1c73809678cd8f46a977332e0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
